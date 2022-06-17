@@ -88,7 +88,7 @@ extern int create_gtp_data_dump_proc(void);
  */
 #define WAKEUP_OFF 4
 #define WAKEUP_ON 5
-bool GTP_gesture_func_on = false;
+bool GTP_gesture_func_on = true;
 
 int gtp_gesture_switch(struct input_dev *dev, unsigned int type, unsigned int code, int value)
 {
