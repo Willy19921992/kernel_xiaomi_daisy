@@ -38,8 +38,6 @@
 #include <media/radio-iris.h>
 #include <asm/unaligned.h>
 
-DEFINE_MUTEX(fm_smd_enable);
-EXPORT_SYMBOL(fm_smd_enable); //Fix compilation of IRIS as a module
 static unsigned int rds_buf = 100;
 static int oda_agt;
 static int grp_mask;

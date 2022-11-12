@@ -38,6 +38,7 @@ struct radio_data {
 	struct smd_channel  *fm_channel;
 };
 struct radio_data hs;
+DEFINE_MUTEX(fm_smd_enable);
 static int fmsmd_set;
 static bool chan_opened;
 static int hcismd_fm_set_enable(const char *val, struct kernel_param *kp);
